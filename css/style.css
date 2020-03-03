@@ -1,0 +1,70 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.main
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.centrar
+{
+    width: 60%;
+    margin: 0 auto;
+}
+.main-contain
+{
+    background:red;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 1em;
+}
+.header-left h1
+{
+    letter-spacing: 3pt;
+}
+.header-right nav ul
+{
+    display: flex;
+    list-style: none;
+}
+.header-right nav ul li
+{
+    text-align: center;
+    margin: 0 10px;
+    padding: 5px;
+}
+.header-right nav ul li a
+{
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+}
+.header-right nav ul li a 
+{
+    transition: .5s;
+}
+
+#menu-first a
+{
+    color: black;
+}
+.header-right nav ul li a:hover
+{
+    color: black;
+}
