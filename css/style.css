@@ -245,7 +245,7 @@ h1
 .services-box
 {
     width: 360px;
-    height: 200px;
+    height: auto;
     padding: 0 1em;
     padding-top: 3em;
     text-align: center;
