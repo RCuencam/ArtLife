@@ -308,10 +308,6 @@ h1
 
 /*---------------------------------------------STATS*/
 
-.xd
-{
-    height: 200px;
-}
 .stats
 {
     width: 100%;
@@ -481,4 +477,81 @@ h1
 .social-item:hover
 {
     cursor: pointer;
+}
+
+/*---------------------------------------BLOG*/
+.blog
+{
+    width: 100%;
+    height: auto;
+}
+.blog-title
+{
+    font-size: 3em;
+    text-align: center;
+    color: rgb(5, 5, 94);
+    padding: 1em 0;
+}
+.blog-contain
+{
+    height: auto;
+    display:grid;
+    grid-template: repeat(2,auto)/repeat(3,350px);
+    grid-template-areas: "ini blog2 blog3" "blog4 blog5 ini2";
+    justify-content: center;
+    grid-gap: 15px;
+}
+.blog-box
+{
+    background: rgb(228, 226, 226);
+}
+.start
+{
+    grid-area: ini2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+}
+.start h2
+{
+    font-size: 2em;
+}
+.start2
+{
+    grid-area: ini;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+}
+
+.blog-img
+{
+    width: 100%;
+}
+.blog-img img
+{
+    width: 100%;
+}
+.blog-info
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.blog-left i
+{
+    color: rgb(9, 69, 119);
+    font-size: 1.2em;
+    margin-right:5px;
+}
+.blog-description
+{
+    padding: 15px 10px;
+}
+.blog-description h2,p
+{
+    opacity: .7;
+    margin: 0;
 }
