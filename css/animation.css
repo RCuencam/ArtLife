@@ -1,0 +1,25 @@
+@keyframes rotate
+{
+    from
+    {
+        opacity:0;
+        transform: rotate(0deg);
+    }
+    to
+    {
+        opacity:1;
+        transform: rotate(225deg);
+    }
+}
+
+@keyframes extend
+{
+    from
+    {
+        width: 0;
+    }
+    to
+    {
+        width: 20%;
+    }
+}
