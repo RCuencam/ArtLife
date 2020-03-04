@@ -9,6 +9,7 @@ body
 .main
 {
     width: 100%;
+    height: 20%;
     height: 100vh;
     background-image: url(../img/principal.jpg);
     background-repeat: no-repeat;
@@ -16,9 +17,13 @@ body
     background-position: center;
     color: white;
 }
+.main-contain
+{
+    height: inherit;
+}
 .centrar
 {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
 }
 header
@@ -26,8 +31,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-    padding: 1em;
+    height: 20%;
 }
 .header-left h1
 {
@@ -72,8 +76,7 @@ a
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100%;
-    padding-top: 4em;   
+    height: 60%;
 }
 .logo-contain
 {
@@ -94,19 +97,6 @@ a
     animation-name: rotate;
     animation-duration:1s;
     animation-fill-mode: forwards;
-}
-@keyframes rotate
-{
-    from
-    {
-        opacity:0;
-        transform: rotate(0deg);
-    }
-    to
-    {
-        opacity:1;
-        transform: rotate(225deg);
-    }
 }
 
 .logo-contain:hover .logo
@@ -132,8 +122,87 @@ a
     height: 2px;
     width: 20%;
     background: white;
+    transform-origin: center;
+    animation-name: extend;
+    animation-duration: 1s;
 }
+
 .info-text
 {
+    opacity: .7;
+}
+
+/*------------------------------------ABOUT*/
+
+h1
+{
+    margin: 0;
+}
+.about
+{
+    height: auto;
+    background: rgb(235, 233, 233);
+}
+.about-title
+{
+    text-align: center;
+    font-size: 3em;
+    color: rgb(5, 5, 94);
+    margin: 1em 0;
+    font-weight: bold;
+}
+.about-contain
+{
+    padding: 2em 0;
+}
+.about-top
+{
+    display: flex;
+    height: 150px;
+}
+.top-title h1
+{
+    margin: 0;
+    padding: 0;
+}
+.top-title
+{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0 1em;
+}
+.top-description p
+{
+    padding: 0 1em;
+    margin: 0;
+    font-size: 1.2em;
+    opacity: .7;
+}
+.top-description p::first-letter
+{
+    color: rgb(5, 5, 94);
+    font-weight: 700;
+    font-size: 2em;
+    padding-right: .2em;
+    text-align: left;
+}
+.top-description
+{
+    border-left: 4px solid rgb(5, 5, 94);
+}
+.about-mid
+{
+    margin: 3em 0;
+    background: red;
+    height: 280px;
+}
+.about-mid img
+{
+    width: 100%;
+    height: 100%;
+}
+.about-bottom
+{
+    text-align: center;
     opacity: .7;
 }
