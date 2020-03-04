@@ -5,7 +5,7 @@ body
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
-
+/*------------------------------------------HEADER*/
 .main
 {
     width: 100%;
@@ -21,21 +21,18 @@ body
     width: 60%;
     margin: 0 auto;
 }
-.main-contain
-{
-    background:red;
-}
 header
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 150px;
+    height: 100px;
     padding: 1em;
 }
 .header-left h1
 {
     letter-spacing: 3pt;
+    cursor: pointer;
 }
 .header-right nav ul
 {
@@ -46,20 +43,18 @@ header
 {
     text-align: center;
     margin: 0 10px;
-    padding: 5px;
 }
-.header-right nav ul li a
+
+a
 {
     color: white;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 700;   
     text-decoration: none;
 }
-.header-right nav ul li a 
+.header-right nav ul li a   
 {
     transition: .5s;
 }
-
 #menu-first a
 {
     color: black;
@@ -67,4 +62,78 @@ header
 .header-right nav ul li a:hover
 {
     color: black;
+}
+
+/*---------------------------------------------MAIN*/
+
+.intro
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 4em;   
+}
+.logo-contain
+{
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+}
+.logo
+{
+    width: 85px;
+    height:85px;
+    border: 2px solid white;
+    border-radius: 2px;
+    transition: .5s;
+    animation-name: rotate;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+}
+@keyframes rotate
+{
+    from
+    {
+        opacity:0;
+        transform: rotate(0deg);
+    }
+    to
+    {
+        opacity:1;
+        transform: rotate(225deg);
+    }
+}
+
+.logo-contain:hover .logo
+{
+    transform: rotate(0deg);
+}
+.intro-info
+{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info-title
+{
+    font-size: 17px;
+    letter-spacing: 2pt;
+}
+.line
+{
+    border: .5px solid white;
+    height: 2px;
+    width: 20%;
+    background: white;
+}
+.info-text
+{
+    opacity: .7;
 }
