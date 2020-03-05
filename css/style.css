@@ -120,6 +120,7 @@ a
 {
     font-size: 17px;
     letter-spacing: 2pt;
+    margin: 7px 0;
 }
 .line
 {
@@ -130,6 +131,7 @@ a
     transform-origin: center;
     animation-name: extend;
     animation-duration: 1s;
+    margin: 15px 0;
 }
 
 .info-text
@@ -350,6 +352,7 @@ h1
 .stats-number p
 {
     margin: 10px;
+    opacity: 1;
 }
 .stats-type
 {
@@ -359,6 +362,7 @@ h1
 .stats-type p
 {
     margin: 0;
+    opacity: 1;
 }
 /*------------------------------GALERY*/
 .galery
@@ -496,7 +500,7 @@ h1
 {
     height: auto;
     display:grid;
-    grid-template: repeat(2,auto)/repeat(3,350px);
+    grid-template: repeat(2,auto)/repeat(3,1fr);
     grid-template-areas: "ini blog2 blog3" "blog4 blog5 ini2";
     justify-content: center;
     grid-gap: 15px;
@@ -550,8 +554,118 @@ h1
 {
     padding: 15px 10px;
 }
-.blog-description h2,p
+.blog-description h2
 {
     opacity: .7;
     margin: 0;
+}
+.blog-description p
+{
+    opacity: .7;
+    margin: 0;
+}
+
+/*--------------------------------------------CONTACT*/
+
+.contact
+{
+    height: auto;
+    background-image: url(../img/contacto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5em;
+}
+.contact-contain
+{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-title
+{
+    font-size: 3em;
+    margin: 1em 0;
+    text-align: center;
+    color: white;
+}
+.contact-box
+{
+    width: auto;
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    height: auto;
+    background: rgba(255,255,255,.2);
+    border-radius: 15px;
+}
+.contact-form
+{
+    padding: 1em;
+}
+
+.input-text
+{
+    width: 480px;
+    height: auto;
+}
+.input-text input
+{
+    width: calc(85%/2);
+    height: 40px;
+    margin: 10px;
+}
+.input-message
+{
+    width: 480px;
+    height: auto;
+
+}
+.input-message input
+{
+    margin: 10px;
+    width:92%;
+    height: 150px;
+}
+.contact-form input
+{
+    border-radius: 5px;
+    border:0;
+    padding-left: 10px;
+}
+.contact-form input[type="submit"]
+{
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    background: rgb(13, 69, 141);
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+.contact-information
+{
+    margin-top: 1.7em;
+    color: white;
+}
+.contact-information p
+{
+    margin: 10px 0;
+}
+footer
+{
+    margin: 2em 0;
+    color: white;
+}
+footer p
+{
+    font-size: 1.4em;
+}
+.social-media
+{
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
 }
