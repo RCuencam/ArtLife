@@ -18,18 +18,19 @@
                 </div>
                 <div class="header-right">
                     <nav>
-                        <ul>
+                        <ul class="menu" id="menu-list">
                             <li id="menu-first"><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Services</a></li>
-                            <li><a href="">Gallery</a></li>
-                            <li><a href="">Stats</a></li>
-                            <li><a href="">Team</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#galery">Galery</a></li>
+                            <li><a href="#stats">Stats</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact" scrolldelay=500>Contact</a></li>
                         </ul>
                     </nav>
                 </div>
+                <div class="menu-button" id="menu"><i class="icon-menu"></i></div>
             </header>
             <div class="intro">
                 <div class="logo"><i class="icon-configuration"></i></div>
@@ -45,7 +46,7 @@
             </div>
         </div>
     </div>
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-contain centrar">
             <div class="about-title"><h1>About</h1></div>
             <div class="about-top">
@@ -67,11 +68,11 @@
             </div>
             </div>
     </section>
-    <section class="services centrar">
+    <section class="services" id="services">
         <div class="services-title">
             <h1>Services</h1>
         </div>
-        <div class="services-list">
+        <div class="services-list centrar">
             <div class="services-box">
                 <div class="services-icon"><i class="icon-configuration"></i></div>
                 <h2>Lorem Ipsum Dolor</h2>
@@ -116,7 +117,7 @@
             </div>
         </div>
     </section>
-    <section class="stats">
+    <section class="stats" id="stats">
         <div class="stats-contain centrar">
             <div class="stats-title"><h1>Stats</h1></div>
             <div class="stats-list">
@@ -155,7 +156,7 @@
             </div>
         </div>
     </section>
-    <section class="galery centrar">
+    <section class="galery centrar" id="galery">
         <div class="galery-title"><h1>Galery</h1></div>
         <div class="galery-contain">
             <div class=" item column2">
@@ -197,7 +198,7 @@
             
         </div>
     </section>
-    <section class="team">
+    <section class="team" id="team">
         <div class="team-title"><h1>Team</h1></div>
         <div class="team-contain centrar">
             <div class="user">
@@ -211,7 +212,7 @@
                 <div class="user-social">
                     <div class="social-item"><i class="icon-facebook"></i></div>
                     <div class="social-item"><i class="icon-twitter"></i></div>
-                    <div class="social-item"><i class="icon-google-plus"></i></div>
+                    <div class="social-item"><i class="icon-instagram"></i></div>
                 </div>
             </div>
             <div class="user user-mid">
@@ -225,7 +226,7 @@
                 <div class="user-social">
                     <div class="social-item"><i class="icon-facebook"></i></div>
                     <div class="social-item"><i class="icon-twitter"></i></div>
-                    <div class="social-item"><i class="icon-google-plus"></i></div>
+                    <div class="social-item"><i class="icon-instagram"></i></div>
                 </div>
             </div>
             <div class="user">
@@ -239,12 +240,12 @@
                 <div class="user-social">
                     <div class="social-item"><i class="icon-facebook"></i></div>
                     <div class="social-item"><i class="icon-twitter"></i></div>
-                    <div class="social-item"><i class="icon-google-plus"></i></div>
+                    <div class="social-item"><i class="icon-instagram"></i></div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="blog">
+    <section class="blog" id="blog">
         <div class="blog-title"><h1>Blog</h1></div>
         <div class="blog-contain centrar">
             <div class="blog-box start">
@@ -301,7 +302,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact-contain centrar">
             <div class="contact-title"><h1>Contact</h1></div>
             <div class="contact-box">
@@ -338,5 +339,13 @@
             </footer>
         </div>
     </section>
+    <script>
+        const $menu=document.getElementById("menu");
+        const $menulist=document.getElementById("menu-list");
+        $menu.addEventListener("click",function()
+        {
+            $menulist.classList.toggle("is-active");
+        })
+    </script>
 </body>
 </html>

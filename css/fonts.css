@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?3lmznn');
-  src:  url('../fonts/icomoon.eot?3lmznn#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?3lmznn') format('truetype'),
-    url('../fonts/icomoon.woff?3lmznn') format('woff'),
-    url('../fonts/icomoon.svg?3lmznn#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?5dk6rr');
+  src:  url('../fonts/icomoon.eot?5dk6rr#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?5dk6rr') format('truetype'),
+    url('../fonts/icomoon.woff?5dk6rr') format('woff'),
+    url('../fonts/icomoon.svg?5dk6rr#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -28,17 +28,14 @@
 .icon-message:before {
   content: "\e900";
 }
+.icon-menu:before {
+  content: "\e90b";
+}
 .icon-instagram:before {
   content: "\e90a";
 }
 .icon-github:before {
   content: "\e909";
-}
-.icon-pinterest:before {
-  content: "\e908";
-}
-.icon-google-plus:before {
-  content: "\e901";
 }
 .icon-twitter:before {
   content: "\e902";

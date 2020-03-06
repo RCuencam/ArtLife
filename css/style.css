@@ -49,7 +49,10 @@ header
     text-align: center;
     margin: 0 10px;
 }
-
+.menu-button
+{
+    display: none;
+}
 a
 {
     color: white;
@@ -224,6 +227,7 @@ h1
     padding: 2em 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     font-size: 16px;
 }
@@ -237,7 +241,7 @@ h1
 }
 .services-list
 {
-    width:100%;
+    width: 90%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -668,4 +672,329 @@ footer p
     margin: 1em 0;
     display: flex;
     justify-content: center;
+}
+
+
+/*---------------------------------------------------RESPONSIVE*/
+
+@media screen and (max-width:1000px)
+{
+
+    header
+    {
+        margin: 0;
+        position: relative;
+    }
+    .menu
+    {
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        text-align: center;
+        background: rgb(39, 38, 38);
+        left: 0;
+        right: 0;
+        margin-top: 2em;
+        padding: 1em;
+        z-index: 9;
+        opacity: 0;
+    }
+    .menu.is-active
+    {
+        opacity: 1;
+        transition: .5s;
+    }
+    .header-right nav ul li
+    {
+        margin: 10px 0;
+        padding: .5em 0;
+    }
+    .menu-button
+    {
+        display: block;
+        font-size: 1.8em;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .about-title
+    {
+        font-size: 2em;
+    }
+    .about-contain
+    {
+        font-size: 13px;
+    }
+    .services-title
+    {
+        font-size: 2em;
+    }
+    .services-contain
+    {
+        font-size: 13px;
+    }
+    .blog-title
+    {
+        font-size: 2em;
+    }
+    .contact-title
+    {
+        font-size: 2em;
+    }
+    footer p
+    {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width:850px)
+{
+    .galery-contain
+    {
+        grid-template-columns:repeat(2,1fr);
+    }
+    .about-contain
+    {
+        font-size: 13px;
+    }
+    .top-title h1
+    {
+        font-size: 1.2em;
+    }
+    .stats-title
+    {
+        font-size: 2em;
+    }
+    .stats-list
+    {
+        font-size: 13px;
+    }
+    .stats-box
+    {
+        margin: 1em 2em;
+    }
+    .galery-title
+    {
+        font-size: 2.5em;
+    }
+    .team-contain
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog-contain
+    {
+        height: auto;
+        display:grid;
+        grid-template: repeat(6,auto)/1fr;
+        grid-template-areas: "ini ""blog2" "blog3" "ini2" "blog4" "blog5";
+        justify-content: center;
+        grid-gap: 15px;
+    }
+}
+@media screen and (max-width:822px)
+{
+    .info-title h1
+    {
+        font-size: 1.6em;
+    }
+}
+@media screen and (max-width:768px)
+{
+    .contact-box
+    {
+        display: block;
+    }
+    footer p
+    {
+        font-size: 1em;
+    }
+    .galery-contain
+    {
+        width: 100%;
+    }
+    .about-top
+    {
+        display: block;
+    }
+}
+@media screen and (max-width:690px)
+{
+    .info-title h1
+    {
+        font-size: 1.4em;
+    }
+}
+@media screen and (max-width:610px)
+{
+    .info-title h1
+    {
+        font-size: 1.2em;
+    }
+    .stats-list
+    {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:580px)
+{
+
+    .contact-box
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-form
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: inherit;
+    }
+    .input-text
+    {
+        width: 90%;
+        height: auto;
+    }
+    .input-text input
+    {
+        width: 100%;
+        height: 40px;
+        margin: 10px;
+    }
+    .input-message
+    {
+        width: 480px;
+        height: auto;
+
+    }
+    .input-message input
+    {
+        margin: 10px;
+        width:90%;
+        height: 150px;
+    }
+}
+@media screen and (max-width:570px)
+{
+
+    .contact-box
+    {
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-form
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: inherit;
+    }
+    .input-text
+    {
+        width: 90%;
+        height: auto;
+    }
+    .input-text input
+    {
+        width: 100%;
+        height: 40px;
+        margin: 10px;
+    }
+    .input-message
+    {
+        width: 480px;
+        height: auto;
+
+    }
+    .input-message input
+    {
+        margin: 10px;
+        width:90%;
+        height: 150px;
+    }
+}
+@media screen and (max-width:570px)
+{
+    .info-title 
+    {
+        text-align: center;
+    }
+    .info-text p
+    {
+        font-size: .9em;
+        text-align: center;
+    }
+    .centrar
+    {
+        width: 80%;
+    }
+}
+@media screen and (max-width:490px)
+{
+    .galery-title
+    {
+        font-size: 2em;
+    }
+    .team-title
+    {
+        font-size: 2em;
+    }
+    .contact-box
+    {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-form form
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: inherit;
+    }
+    .input-text
+    {
+        width: 100%;
+        height: auto;
+    }
+    .input-text input
+    {
+        width: 90%;
+        height: 40px;
+        margin: 10px;
+    }
+    .input-message
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .input-message input
+    {
+        margin: 10px;
+        width:90%;
+        height: 150px;
+    }
+    .galery-contain
+    {
+        grid-template-columns:repeat(1,1fr);
+    }
 }
